@@ -40,6 +40,8 @@ var (
 		PauseCommand,
 		UnpauseCommand,
 		PracticeCommand,
+		// For Tedo
+		PivoCommand,
 	}
 )
 
