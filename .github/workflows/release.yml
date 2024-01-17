@@ -5,6 +5,10 @@ on:
     types:
       - published
 
+permissions:
+  contents: write
+  packages: write
+
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
@@ -35,9 +39,6 @@ jobs:
   docker:
     name: Release Docker image
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      packages: write
     steps:
       - name: Check out
         uses: actions/checkout@v3
