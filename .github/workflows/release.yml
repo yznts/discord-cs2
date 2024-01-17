@@ -35,6 +35,9 @@ jobs:
   docker:
     name: Release Docker image
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
     steps:
       - name: Check out
         uses: actions/checkout@v3
