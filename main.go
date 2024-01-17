@@ -61,6 +61,22 @@ func init() {
 	flag.StringVar(&RCON_ADDR, "rcon-addr", "", "RCON Address")
 	flag.StringVar(&RCON_PASS, "rcon-pass", "", "RCON Password")
 	flag.Parse()
+	// Load env
+	if TOKEN == "" {
+		TOKEN = os.Getenv("TOKEN")
+	}
+	if SERV_ADDR == "" {
+		SERV_ADDR = os.Getenv("SERV_ADDR")
+	}
+	if SERV_PASS == "" {
+		SERV_PASS = os.Getenv("SERV_PASS")
+	}
+	if RCON_ADDR == "" {
+		RCON_ADDR = os.Getenv("RCON_ADDR")
+	}
+	if RCON_PASS == "" {
+		RCON_PASS = os.Getenv("RCON_PASS")
+	}
 	// Validate arguments
 	if TOKEN == "" {
 		panic("token is required")
