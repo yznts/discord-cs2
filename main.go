@@ -34,14 +34,12 @@ var (
 	COMMANDS = []Command{
 		AboutCommand,
 		RconCommand,
+		ModeCommand,
 		MapCommand,
 		RestartCommand,
 		WarmCommand,
 		PauseCommand,
 		UnpauseCommand,
-		PracticeCommand,
-		// For Tedo
-		PivoCommand,
 	}
 )
 
