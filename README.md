@@ -1,6 +1,6 @@
 
 <p align="center">
-    <img width="200" style="border-radius:50%" src=".github/resources/logo.jpg" />
+    <img width="200" src=".github/resources/logo-circle.png" />
 </p>
 
 <h1 align="center">CS2 Manager Bot</h1>
