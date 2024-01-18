@@ -6,14 +6,14 @@
 <h1 align="center">CS2 Manager Bot</h1>
 
 <p align="center">
-	Manage your Counter-Strike 2 game server with Discord
+    Manage your Counter-Strike 2 game server with Discord
 </p>
 
 ```bash
 cs2bot \
-	-token      <DISCORD_TOKEN> \
-	-rcon-addr  <RCON_ADDR> \
-	-rcon-pass  <RCON_PASS>
+    -token      <DISCORD_TOKEN> \
+    -rcon-addr  <RCON_ADDR> \
+    -rcon-pass  <RCON_PASS>
 ```
 
 A great way to bring some fun to your Discord server.
@@ -41,11 +41,11 @@ Example using binary:
 
 ```bash
 cs2bot \
-	-token      <DISCORD_TOKEN> \
-	-rcon-addr  <RCON_ADDR> \
-	-rcon-pass  <RCON_PASS> \
-	-serv-addr  <SERV_ADDR> \
-	-serv-pass  <SERV_PASS>
+    -token      <DISCORD_TOKEN> \
+    -rcon-addr  <RCON_ADDR> \
+    -rcon-pass  <RCON_PASS> \
+    -serv-addr  <SERV_ADDR> \
+    -serv-pass  <SERV_PASS>
 ```
 
 Example using docker:
@@ -53,11 +53,11 @@ Example using docker:
 ```bash
 
 docker run -d  \
-	-e TOKEN=<TOKEN> \
-	-e RCON_ADDR=<RCON_ADDR> \
-	-e RCON_PASS=<RCON_PASS> \
-	-e SERV_ADDR=<SERV_ADDR> \
-	-e SERV_PASS=<SERV_PASS> \
+    -e TOKEN=<TOKEN> \
+    -e RCON_ADDR=<RCON_ADDR> \
+    -e RCON_PASS=<RCON_PASS> \
+    -e SERV_ADDR=<SERV_ADDR> \
+    -e SERV_PASS=<SERV_PASS> \
     --name cs2bot \
     ghcr.io/yuriizinets/discord-cs2:latest
 ```
@@ -70,14 +70,14 @@ version: '3'
 services:
     cs2bot:
         image: ghcr.io/yuriizinets/discord-cs2:latest
-		container_name: cs2bot
-		restart: unless-stopped
-		environment:
-			- TOKEN=<TOKEN>
-			- RCON_ADDR=<RCON_ADDR>
-			- RCON_PASS=<RCON_PASS>
-			- SERV_ADDR=<SERV_ADDR>
-			- SERV_PASS=<SERV_PASS>
+        container_name: cs2bot
+        restart: unless-stopped
+        environment:
+            - TOKEN=<TOKEN>
+            - RCON_ADDR=<RCON_ADDR>
+            - RCON_PASS=<RCON_PASS>
+            - SERV_ADDR=<SERV_ADDR>
+            - SERV_PASS=<SERV_PASS>
 ```
 
 ## Usage
